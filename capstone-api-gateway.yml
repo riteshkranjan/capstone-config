@@ -1,0 +1,24 @@
+zuul:
+  routes:
+    inventory:
+      path: /inventory/**
+      strip-prefix: false
+      service-id: capstone-inventory-service
+    booking:
+      path: /booking/**
+      strip-prefix: false
+      service-id: capstone-booking-service
+    
+ribbon:
+  ReadTimeout: 5000
+  connectTimeout: 5000
+hystrix:
+  command:
+    default: 
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 50000
+logging:
+  file:
+    path: /tmp/fb_webservice/capstone-api-gateway-server
