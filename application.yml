@@ -7,7 +7,7 @@ spring:
       percentage: 1.0
 logging:
   level:
-    root: debug
+    root: error
     org:
       springframework:
         data: error
