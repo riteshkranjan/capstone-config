@@ -16,4 +16,4 @@ eureka:
     instanceId: ${spring.application.name}:${vcap.application.instance_id:${spring.application.instance_id:${random.value}}}
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka
+      defaultZone: http://Eur1:2222/eureka,http://Eur3:2223/eureka,http://Eur3:2224/eureka
