@@ -19,6 +19,3 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 50000
-logging:
-  file:
-    path: /tmp/fb_webservice/capstone-api-gateway-server

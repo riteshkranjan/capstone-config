@@ -4,6 +4,3 @@ spring:
       database: EXAM_DB
       host: localhost
       port: 27017
-logging:
-  file:
-    path: /tmp/fb_webservice/capstone-booking-service
