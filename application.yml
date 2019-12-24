@@ -7,8 +7,7 @@ spring:
       percentage: 1.0
 logging:
   file:
-    path: /tmp/fb_webservice/${spring.application.name}/
-    name: server_${server.port}.log
+    name: /tmp/fb_webservice/${spring.application.name}/server_${server.port}.log
   level:
     root: debug
     org:
